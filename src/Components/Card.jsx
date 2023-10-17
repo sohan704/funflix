@@ -1,11 +1,16 @@
 const Card = ({ card }) => {
 
   const {name, image} = card;
+  
+  const handleClick = () => {
+    console.log(name.toLowerCase());
+  }
+
   return (
     <div>
-      <div className="card card-compact w-9/12 mx-auto bg-base-100 shadow-xl">
+      <div onClick={handleClick} className="card card-compact w-9/12 mx-auto bg-base-100 shadow-xl">
         <figure><img className="w-[380px] h-[180px] object-cover" src={image} alt="Shoes" /></figure>
-        <div className="card-body">
+        <div className="card-body items-center text-center">
           <h2 className="card-title text-2xl">{name}</h2>
         </div>
       </div>

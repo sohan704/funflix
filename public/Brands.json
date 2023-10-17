@@ -3,25 +3,27 @@
     "id": 1,
     "name": "Disney",
     "image": "https://i.ibb.co/jzCgQjg/disney5456.jpg"
+    
   },
   {
     "id": 2,
     "name": "Netflix",
     "image": "https://i.ibb.co/2YkR7Sx/Netflix-logo-svg.png"
+    
   },
   {
     "id": 3,
-    "name": "Warner Bros.",
+    "name": "WarnerBros",
     "image": "https://i.ibb.co/qmnqw20/warnerbros.jpg"
   },
   {
     "id": 4,
-    "name": "Sony Pictures",
+    "name": "SonyPictures",
     "image": "https://i.ibb.co/r0HL2xp/sony-pictures-television6089.jpg"
   },
   {
     "id": 5,
-    "name": "Paramount Pictures",
+    "name": "ParamountPictures",
     "image": "https://i.ibb.co/2nnhtR7/paramount-pictures.png"
   },
   {
