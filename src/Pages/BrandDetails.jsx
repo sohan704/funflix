@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import { useEffect, useState } from "react";
+import Brandcards from "../Components/Brandcards";
 
 
 const BrandDetails = () => {
@@ -17,11 +18,11 @@ const BrandDetails = () => {
         const response = await fetch('/Brands.json');
         const data = await response.json();
         setCurrent(data);
-        console.log(data);
-        console.log(brandData[0]?.brand);
+        // console.log(data);
+        // console.log(brandData[0]?.brand);
 
         const item = data.find(item => item.name.toLowerCase() === brandData[0]?.brand?.toLowerCase())
-        console.log(item);
+        // console.log(item);
         setCurrent(item);
 
       } catch (error) {
@@ -39,7 +40,7 @@ const BrandDetails = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="w-full lg:w-10/12 mx-auto">
+      <div className="w-full my-10 lg:w-10/12 mx-auto">
         <div className="carousel w-full">
           <div id="slide1" className="carousel-item relative w-full">
             <img src={current ? current?.pic1 : `https://i.ibb.co/mNJtmcS/taylorswift.jpg`} className="w-full" />
@@ -71,9 +72,7 @@ const BrandDetails = () => {
           </div>
         </div>
       </div>
-      {
-        
-      }
+      <Brandcards brandData={brandData}></Brandcards>
     </div>
   );
 };
