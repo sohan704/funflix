@@ -4,6 +4,8 @@ const Brandcard = ({ card }) => {
   
   const {image, name, brand, price, rating, description, type} = card;
 
+  
+
   return (
     <div>
       <div className="card w-96 mx-auto my-10 bg-base-100 shadow-xl">

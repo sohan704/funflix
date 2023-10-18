@@ -10,7 +10,7 @@ const AddProducts = () => {
     const form = e.target;
     const image = form.image.value;
     const name = form.name.value;
-    const brand = form.brand.value.toLowerCase();
+    const brand = form.brand.value.replace(/\s/g, '').toLowerCase();
     const price = form.price.value;
     const rating = form.rating.value;
     const description = form.description.value;

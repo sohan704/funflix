@@ -31,6 +31,9 @@ import BrandDetails from "../Pages/BrandDetails";
           path:'/product/:brand',
           element:<BrandDetails></BrandDetails>,
           loader: ({params}) => fetch(`http://localhost:5000/product/${params.brand}`)
+        },
+        {
+          
         }
       ]
 
