@@ -2,33 +2,55 @@
   {
     "id": 1,
     "name": "Disney",
-    "image": "https://i.ibb.co/jzCgQjg/disney5456.jpg"
-    
+    "image": "https://i.ibb.co/jzCgQjg/disney5456.jpg",
+    "pic1": "https://i.ibb.co/3mSrjXc/Tarzan-1024x512.jpg",
+    "pic2": "https://i.ibb.co/TkFQsnp/pirates.jpg",
+    "pic3": "https://i.ibb.co/d6SPcXM/showwhite.jpg",
+    "pic4": "https://i.ibb.co/0CSfYyR/nemo.jpg"
   },
   {
     "id": 2,
     "name": "Netflix",
-    "image": "https://i.ibb.co/2YkR7Sx/Netflix-logo-svg.png"
-    
+    "image": "https://i.ibb.co/2YkR7Sx/Netflix-logo-svg.png",
+    "pic1": "https://i.ibb.co/THkn3BF/jonwick.jpg",
+    "pic2": "https://i.ibb.co/tKMgpyr/Jason-Bourne-Movies-In-Order.jpg",
+    "pic3": "https://i.ibb.co/Gk230Rx/Mission-Impossible-7-Horizontal.jpg",
+    "pic4": "https://i.ibb.co/vvwB4cC/rambo.jpg"
   },
   {
     "id": 3,
     "name": "WarnerBros",
-    "image": "https://i.ibb.co/qmnqw20/warnerbros.jpg"
+    "image": "https://i.ibb.co/qmnqw20/warnerbros.jpg",
+    "pic1": "https://i.ibb.co/1vy3y76/inception.jpg",
+    "pic2": "https://i.ibb.co/C2Yx4Zm/sherlock-holmes-movie-poster-wallpaper-preview.jpg",
+    "pic3": "https://i.ibb.co/Yjs4Q8w/batman.jpg",
+    "pic4": "https://i.ibb.co/nbFT6n1/aquaman.jpg"
   },
   {
     "id": 4,
     "name": "SonyPictures",
-    "image": "https://i.ibb.co/r0HL2xp/sony-pictures-television6089.jpg"
+    "image": "https://i.ibb.co/r0HL2xp/sony-pictures-television6089.jpg",
+    "pic1": "https://i.ibb.co/LYZGFK3/karate-Kid.jpg",
+    "pic2": "https://i.ibb.co/qyPfmZB/spider-man-2-2.jpg",
+    "pic3": "https://i.ibb.co/sPmnfj0/uncharted-2.jpg",
+    "pic4": "https://i.ibb.co/FhLFRYP/venom.jpg"
   },
   {
     "id": 5,
     "name": "ParamountPictures",
-    "image": "https://i.ibb.co/2nnhtR7/paramount-pictures.png"
+    "image": "https://i.ibb.co/2nnhtR7/paramount-pictures.png",
+    "pic1": "https://i.ibb.co/dkBkM1q/topgun.jpg",
+    "pic2": "https://i.ibb.co/TgZK9Mf/Forrest-Gump.jpg",
+    "pic3": "https://i.ibb.co/SQGgt9Z/trumanshow.jpg",
+    "pic4": "https://i.ibb.co/FVRSY3x/godfather.jpg"
   },
   {
     "id": 6,
     "name": "Spotify",
-    "image": "https://i.ibb.co/zH0pcs0/spotify.png"
+    "image": "https://i.ibb.co/zH0pcs0/spotify.png",
+    "pic1": "https://i.ibb.co/mNJtmcS/taylorswift.jpg",
+    "pic2": "https://i.ibb.co/Pwts7z2/dolores-oriordan-188073.jpg",
+    "pic3": "https://i.ibb.co/qnDVWgF/zimmer.jpg",
+    "pic4": "https://i.ibb.co/rwYFtjm/ed-sheeran-siriusxm-studios-013123-2-e9bb7a1bd9744a8aac518ca4faa30490.jpg"
   }
 ]

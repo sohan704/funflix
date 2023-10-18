@@ -1,9 +1,14 @@
+import { useNavigate } from "react-router-dom";
+
 const Card = ({ card }) => {
 
   const {name, image} = card;
   
+  const navigate = useNavigate();
+
   const handleClick = () => {
     console.log(name.toLowerCase());
+    navigate(`/product/${name.toLowerCase()}`);
   }
 
   return (

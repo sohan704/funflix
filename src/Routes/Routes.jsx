@@ -4,6 +4,7 @@ import Home from "../Pages/Home";
 import AddProducts from "../Pages/AddProducts";
 import MyCart from "../Pages/MyCart";
 import Error from "../Pages/Error";
+import BrandDetails from "../Pages/BrandDetails";
 
 
   
@@ -25,6 +26,11 @@ import Error from "../Pages/Error";
         {
           path:'/mycart',
           element:<MyCart></MyCart>
+        },
+        {
+          path:'/product/:brand',
+          element:<BrandDetails></BrandDetails>,
+          loader: ({params}) => fetch(`http://localhost:5000/product/${params.brand}`)
         }
       ]
 
