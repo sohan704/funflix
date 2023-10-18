@@ -1,10 +1,16 @@
 import { FaStar } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 const Brandcard = ({ card }) => {
   
-  const {image, name, brand, price, rating, description, type} = card;
+  const {image, _id, name, brand, price, rating, description, type} = card;
 
+  const navigate = useNavigate();
   
+  const handleDetails = () => {
+    navigate(`/product/${brand}/${_id}`);
+    // console.log(_id, name);
+  }
 
   return (
     <div>
@@ -20,7 +26,7 @@ const Brandcard = ({ card }) => {
           <div className="text-md text-xl flex font-bold">Rating  : {rating} <div className="flex items-center text-yellow-400"> <FaStar/> </div> </div>
           <div className='text-center'><p>{description.slice(0, 100)}...</p></div>
           <div className="card-actions">
-            <button className="btn btn-info">Details</button>
+            <button onClick={handleDetails} className="btn btn-info">Details</button>
             <button className="btn btn-secondary">Update</button>
           </div>
         </div>
