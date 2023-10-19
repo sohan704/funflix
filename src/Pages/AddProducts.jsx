@@ -64,7 +64,16 @@ const AddProducts = () => {
                 <label className="label">
                   <span className="label-text">Brand Name</span>
                 </label>
-                <input type="text" name="brand" placeholder="Brand Name" className="input input-bordered" required />
+                {/* <input type="text" name="brand" placeholder="Brand Name" className="input input-bordered" required /> */}
+               
+                <select className="input input-bordered" name="brand">
+                    <option value="netflix">Netflix</option>
+                    <option value="warnerbros">Warner Bros</option>
+                    <option value="disney">Disney</option>
+                    <option value="sonypictures">Sony Pictures</option>
+                    <option value="paramountpictures">Paramount Pictures</option>
+                    <option value="spotify">Spotify</option>
+                  </select>
 
               </div>
               <div className="form-control">
