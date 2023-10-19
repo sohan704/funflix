@@ -13,7 +13,7 @@ const Brandcard = ({ card }) => {
   }
 
   const handleUpdate = () => {
-    navigate(`/update/${_id}`);
+    navigate(`/product/${brand}/update/${_id}`);
   }
 
   return (
