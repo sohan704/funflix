@@ -7,6 +7,7 @@ import Error from "../Pages/Error";
 import BrandDetails from "../Pages/BrandDetails";
 import SingleProduct from "../Pages/SingleProduct";
 import BrandDetailsRoot from "../Pages/BrandDetailsRoot";
+import Update from "../Pages/Update";
 
 
 
@@ -45,6 +46,11 @@ const routes = createBrowserRouter([
             loader: ({ params }) => fetch(`http://localhost:5000/product/${params.brand}/${params.id}`)
           }
         ]
+      },
+      {
+        path:'/update/:id',
+        element:<Update></Update>,
+        // loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`),
       }
 
     ]

@@ -12,6 +12,10 @@ const Brandcard = ({ card }) => {
     // console.log(_id, name);
   }
 
+  const handleUpdate = () => {
+    navigate(`/update/${_id}`);
+  }
+
   return (
     <div>
       <div className="card w-96 mx-auto my-10 bg-base-100 shadow-xl">
@@ -27,7 +31,7 @@ const Brandcard = ({ card }) => {
           <div className='text-center'><p>{description.slice(0, 100)}...</p></div>
           <div className="card-actions">
             <button onClick={handleDetails} className="btn btn-info">Details</button>
-            <button className="btn btn-secondary">Update</button>
+            <button onClick={handleUpdate} className="btn btn-secondary">Update</button>
           </div>
         </div>
       </div>

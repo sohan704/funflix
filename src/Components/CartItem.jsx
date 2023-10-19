@@ -1,20 +1,36 @@
-const CartItem = ({ card }) => {
+const CartItem = ({ card,current, setCurrent }) => {
   const { _id, name, image, description } = card;
 
-  console.log(_id);
-  
+
+  const handleDelete = (id) => {
+     console.log(id);
+     console.log(_id);
+     
+
+     fetch(`http://localhost:5000/cart/${id}`,{
+
+         method:'DELETE'
+
+     }).then(res => res.json()).then(data => {
+      console.log(data);
+      const remaining = current.filter(card => card._id !== id);
+      setCurrent(remaining);
+     });
+
+  }
+
   return (
     <div>
-      <div className="card w-96 bg-base-100 shadow-xl my-10">
+      <div className="card w-96 bg-base-100 mx-auto shadow-xl my-10">
         <figure className="px-10 pt-10">
           <img src={image} alt="Shoes" className="rounded-xl" />
         </figure>
         <div className="card-body items-center text-center">
           <h2 className="card-title">{name}</h2>
-          <p>{description.slice(0, 40)}</p>
+          <p>{description.slice(0, 90)}..</p>
           <div className="card-actions">
-            <button className="btn btn-lg btn-circle btn-error">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
+            <button onClick={() => {handleDelete(_id)}} className="btn btn-lg btn-circle btn-error">
+              X
             </button>
           </div>
         </div>
