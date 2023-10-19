@@ -21,7 +21,7 @@ const AddProducts = () => {
     console.log(newProduct);
    
 
-    fetch('http://localhost:5000/product',{
+    fetch('https://brand-shop-server-758jhi3ui-sohan704.vercel.app/product',{
       method:'POST',
       headers: {
         'content-type' : 'application/json'

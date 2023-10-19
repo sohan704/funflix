@@ -22,7 +22,7 @@ const Update = () => {
     const newProduct = {image, name, brand, price, rating,type};
     console.log(newProduct);
    
-    fetch(`http://localhost:5000/product/${_id}`,{
+    fetch(`https://brand-shop-server-758jhi3ui-sohan704.vercel.app/product/${_id}`,{
       method:'PUT',
       headers:{
        'content-type' : 'application/json'

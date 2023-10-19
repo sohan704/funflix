@@ -4,7 +4,7 @@ FunFlix is  a fullstack web application simulating the CRUD operating using the 
 
 ## Live Link
 
-To visit  [click here](https://pip.pypa.io/en/stable/)
+To visit  [click here](https://funflix-b16ab.web.app/)
 
 
 

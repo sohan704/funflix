@@ -11,7 +11,7 @@ const SingleProduct = () => {
   
   const handleAddToCart = () => {
     console.log('clicked handle add to cart');
-    fetch('http://localhost:5000/cart',{
+    fetch('https://brand-shop-server-758jhi3ui-sohan704.vercel.app/cart',{
       method:'POST',
       headers: {
        'content-type' : 'application/json'
