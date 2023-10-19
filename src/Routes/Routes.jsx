@@ -8,6 +8,8 @@ import BrandDetails from "../Pages/BrandDetails";
 import SingleProduct from "../Pages/SingleProduct";
 import BrandDetailsRoot from "../Pages/BrandDetailsRoot";
 import Update from "../Pages/Update";
+import Register from "../Pages/Register";
+import Login from "../Pages/Login";
 
 
 
@@ -25,6 +27,14 @@ const routes = createBrowserRouter([
       {
         path: '/addproducts',
         element: <AddProducts></AddProducts>
+      },
+      {
+        path:'/register',
+        element:<Register></Register>
+      },
+      {
+        path:'/login',
+        element:<Login></Login>
       },
       {
         path: '/mycart',

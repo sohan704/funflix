@@ -1,6 +1,6 @@
 import { useState } from "react";
 import changeTheme from "../DarkMode/Toggle";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [theme, setTheme] = useState('Dark');
@@ -50,7 +50,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-sm lg:btn btn-secondary lg:btn-info text-sm lg:text-lg">LOGIN</a>
+          <Link className="btn btn-sm lg:btn btn-secondary lg:btn-info text-sm lg:text-lg" to='/login'>LOGIN</Link>
           <a onClick={handleChange} className="btn text-xs btn-error btn-circle p-1 m-2">{theme}</a>
 
         </div>
