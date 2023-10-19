@@ -7,7 +7,7 @@ const CartItem = ({ card,current, setCurrent }) => {
      console.log(_id);
      
 
-     fetch(`https://brand-shop-server-758jhi3ui-sohan704.vercel.app/cart/${id}`,{
+     fetch(`https://brand-shop-server-eb5wt3ngh-sohan704.vercel.app/cart/${id}`,{
 
          method:'DELETE'
 

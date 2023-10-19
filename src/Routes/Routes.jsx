@@ -39,8 +39,8 @@ const routes = createBrowserRouter([
       },
       {
         path: '/mycart',
-        element: <PrivateRoute><MyCart></MyCart></PrivateRoute> ,
-        loader: () => fetch('https://brand-shop-server-758jhi3ui-sohan704.vercel.app/cart')
+        element: <PrivateRoute><MyCart></MyCart></PrivateRoute> 
+        // loader: () => fetch('https://brand-shop-server-eb5wt3ngh-sohan704.vercel.app/cart')
       },
       {
         path: '/product/:brand',
@@ -49,17 +49,17 @@ const routes = createBrowserRouter([
           {
             path: '',
             element: <BrandDetails></BrandDetails>,
-            loader: ({ params }) => fetch(`https://brand-shop-server-758jhi3ui-sohan704.vercel.app/product/${params.brand}`),
+            loader: ({ params }) => fetch(`https://brand-shop-server-eb5wt3ngh-sohan704.vercel.app/product/${params.brand}`),
           },
           {
             path: ':id',
             element: <PrivateRoute><SingleProduct></SingleProduct></PrivateRoute>,
-            loader: ({ params }) => fetch(`https://brand-shop-server-758jhi3ui-sohan704.vercel.app/product/${params.brand}/${params.id}`)
+            loader: ({ params }) => fetch(`https://brand-shop-server-eb5wt3ngh-sohan704.vercel.app/product/${params.brand}/${params.id}`)
           },
           {
             path: 'update/:id', 
             element: <PrivateRoute><Update></Update></PrivateRoute> ,
-            loader: ({ params }) => fetch(`https://brand-shop-server-758jhi3ui-sohan704.vercel.app/product/${params.brand}/update/${params.id}`)
+            loader: ({ params }) => fetch(`https://brand-shop-server-eb5wt3ngh-sohan704.vercel.app/product/${params.brand}/update/${params.id}`)
           }
         ]
       },

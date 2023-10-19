@@ -1,22 +1,41 @@
 import { useLoaderData } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import swal from 'sweetalert';
+import { useContext } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
 
 
 const SingleProduct = () => {
 
   const product = useLoaderData();
   console.log(product);
-  const { image, name, type, description } = product;
+  const { _id, image, name, type, description } = product;
+
+  const {user} = useContext(AuthContext);
+  // console.log(user.email);
+  // console.log(image);
+
+  const productTobeSent = {
+    myId : _id,
+    image: image,
+    name:name,
+    email: user.email,
+    type: type,
+    description: description,
+  }
+
+  console.log(productTobeSent);
+
+
   
   const handleAddToCart = () => {
     console.log('clicked handle add to cart');
-    fetch('https://brand-shop-server-758jhi3ui-sohan704.vercel.app/cart',{
+    fetch('https://brand-shop-server-eb5wt3ngh-sohan704.vercel.app/cart',{
       method:'POST',
       headers: {
        'content-type' : 'application/json'
       },
-      body: JSON.stringify(product)
+      body: JSON.stringify(productTobeSent)
     }).then(res => res.json())
     .then(data => {
 
