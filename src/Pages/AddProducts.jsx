@@ -1,5 +1,6 @@
 
 import Navbar from "../Components/Navbar";
+import swal from 'sweetalert';
 
 
 const AddProducts = () => {
@@ -26,7 +27,10 @@ const AddProducts = () => {
         'content-type' : 'application/json'
        },
       body: JSON.stringify(newProduct)
-  }).then(res => res.json()).then(data => console.log(data));
+  }).then(res => res.json()).then(data => {
+    console.log(data);
+    swal("Product Added!", "Good Job!", "success");
+  });
 
   }
   

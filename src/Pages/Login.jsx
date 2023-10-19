@@ -5,9 +5,11 @@ import { AuthContext } from "../Provider/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import { FaGoogle } from "react-icons/fa";
+
 const Login = () => {
 
-  const {signIn} = useContext(AuthContext);
+  const {signIn,googleLogin} = useContext(AuthContext);
 
   
   const handleLogin = (e) => {
@@ -49,6 +51,21 @@ const Login = () => {
 
 
 
+  const handleGoogleLogin = () => {
+    googleLogin().then(result => {
+      toast.success('Login Successful!', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    }).catch();
+  }
+
 
 
   return (
@@ -85,8 +102,17 @@ const Login = () => {
                 <ToastContainer />
               </div>
             </form>
+
+           
           </div>
+
+           <div className="my-10">
+               <button onClick={handleGoogleLogin} className="bg-red-500 flex items-center gap-3 rounded-xl p-3 text-white font-semibold"><FaGoogle></FaGoogle>Continue with Google</button>
+            </div>
         </div>
+
+
+          
       </div>
     </div>
   );

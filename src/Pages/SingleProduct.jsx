@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Navbar from "../Components/Navbar";
+import swal from 'sweetalert';
 
 
 const SingleProduct = () => {
@@ -20,6 +21,7 @@ const SingleProduct = () => {
     .then(data => {
 
       console.log(data);
+      swal("Added to Cart!", "Good Job!", "success");
 
     })
   }

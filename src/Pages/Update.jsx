@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Navbar from "../Components/Navbar";
-
+import swal from 'sweetalert';
 const Update = () => {
   const data = useLoaderData();
 
@@ -30,6 +30,7 @@ const Update = () => {
       body: JSON.stringify(newProduct),
    }).then(res => res.json()).then(data => {
       console.log(data);
+      swal("Product Updated!", "Good Job!", "success");
       
    })
    
@@ -85,7 +86,7 @@ const Update = () => {
                 </div>
 
                
-               
+
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Type</span>
